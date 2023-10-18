@@ -14,12 +14,13 @@ $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['H
 <body>
   <div class="container">
     <div class="row mt-5">
-      <div class="col-2 list-group">
-        <a href="" class="list-group-item list-group-item-action">首頁Banner</a>
-        <a href="" class="list-group-item list-group-item-action active">建材商品-大分類</a>
-        <a href="" class="list-group-item list-group-item-action">建材商品-小分類</a>
-        <a href="" class="list-group-item list-group-item-action">建材商品總覽</a>
-        <!-- <a class="text-white" href="">商品分類</a> -->
+      <div class="col-2 bg-info p-1">
+        <div class="list-group" style="border-radius:0">
+          <a href="" class="list-group-item list-group-item-action">首頁Banner</a>
+          <a href="" class="list-group-item list-group-item-action active">建材商品-大分類</a>
+          <a href="" class="list-group-item list-group-item-action">建材商品-小分類</a>
+          <a href="" class="list-group-item list-group-item-action">建材商品總覽</a>        
+        </div>
       </div>
       <div class="col-10 table-responsive-md">        
         <h4 class="float-start">建材商品-大分類</h4>
@@ -32,26 +33,35 @@ $root_url = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['H
               <th>名稱</th>
               <th>圖片(PC)</th>
               <th>圖片(MB)</th>
+              <th>排序</th>
+              <th>上架</th>
+              <th>動作</th>
             </tr>  
           </thead>
           <tbody>
             <tr>
               <td>1</td>
               <td>衛浴</td>
-              <td><img decoding="async" src="" class="mx-auto d-block" width=250 height=250></td>
-              <td><img decoding="async" src="" class="mx-auto d-block" width=250 height=250></td>
+              <td><img decoding="async" src="<?php echo $root_url;?>/asset/image/TOTO-C300.jpg" class="mx-auto d-block" width=250></td>
+              <td><img decoding="async" src="<?php echo $root_url;?>/asset/image/HCG-C4288NBPAdb_0.jpg" class="mx-auto d-block" width=250></td>
+              <td>0</td>
+              <td>是</td>
             </tr>
             <tr>
               <td>2</td>
               <td>牆面建材</td>
               <td></td>
               <td></td>
+              <td>1</td>
+              <td>是</td>
             </tr>
             <tr>
               <td>3</td>
               <td>地板建材</td>
               <td></td>
               <td></td>
+              <td>2</td>
+              <td>是</td>
             </tr>
           </tbody>
         </table>  
